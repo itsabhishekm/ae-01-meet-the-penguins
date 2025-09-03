@@ -1,0 +1,47 @@
+---
+title: "AE 01: Meet the penguins"
+author: "Greg Chism"
+format: html
+editor: visual
+jupyter: python3
+---
+
+For this application exercise, we'll use the pandas and palmerpenguins packages.
+
+```{python}
+#| label: load-packages
+
+import pandas as pd
+from palmerpenguins import load_penguins
+```
+
+First, let's read in the data.
+
+```{python}
+penguins = load_penguins()
+```
+
+The dataset we will visualize is called `penguins`.
+Let's `.info()` at it.
+
+```{python}
+2 * 4
+```
+
+-   **Your turn:** Replace `#add code here` with the code for "info"ing at the data `penguins` data frame – `penguins.info()`. Render the document and view the output.
+
+```{python}
+#| label: info-penguins
+
+# add code here
+```
+
+-   **Demo:** First, replace the blank below with the number of rows in the `penguins` data frame based on the output of the chunk below. Then, replace it with "inline code" and render again.
+
+```{python}
+#| label: len-penguins
+
+len(penguins)
+```
+
+There are 344 penguins in the `penguins` data frame.
